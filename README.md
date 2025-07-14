@@ -26,8 +26,7 @@ Understand and visualize the Iris Dataset to analyze relationships, distribution
 - **Sepal width contains a few outliers**; other features are tightly clustered.
 - **Petal measurements are more effective** than sepal measurements for distinguishing species.
 
-### 📁 File
-[`Task1_Iris_Analysis.ipynb`](Task1_Iris.html)
+
 
 ---
 

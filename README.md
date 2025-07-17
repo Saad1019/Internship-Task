@@ -1,80 +1,100 @@
-# Data Science & Analytics Internship Tasks
+# 💼 Data Science & Analytics Internship Tasks
 
-**Overview**  
-This repository contains my completed tasks for the **Data Science & Analytics Internship** at **DevelopersHub Corporation**. The tasks demonstrate skills in data exploration, visualization, and machine learning using Python libraries like `pandas`, `matplotlib`, `seaborn`, and `scikit-learn`.
+**📍 Internship Organization:** DevelopersHub Corporation  
+**📅 Submission Deadline:** August 2, 2025  
+**📊 Domain:** Data Science & Machine Learning  
+**🔧 Tools Used:** `Python`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`
 
 ---
 
-## Task 1: Exploring and Visualizing the Iris Dataset
+## 🧠 Overview
 
-**Objective:**  
-Understand and visualize the Iris Dataset to analyze relationships, distributions, and outliers.
+This repository contains completed tasks for the **Data Science & Analytics Internship** at **DevelopersHub Corporation**. Each task demonstrates practical skills in data analysis, visualization, and predictive modeling using real-world datasets.
 
-**Approach:**
-- Loaded the dataset using `seaborn.load_dataset('iris')`.
-- Summarized the dataset structure using `pandas` methods (`shape`, `columns`, `head`).
+---
+
+## 🌸 Task 1: Exploring and Visualizing the Iris Dataset
+
+### 🎯 Objective  
+Understand and visualize the **Iris Dataset** to analyze relationships, distributions, and outliers.
+
+### 🛠️ Approach
+- Loaded the dataset using `seaborn.load_dataset('iris')`
+- Explored structure using `pandas` (`shape`, `columns`, `head`)
 - Created visualizations using `seaborn` and `matplotlib`:
-  - Scatter plot of petal length vs. petal width, colored by species.
-  - Histograms of all numerical features.
-  - Box plots to show spread and outliers.
-  - Bonus: pair plot for comprehensive relationships.
+  - 🌿 Scatter plot: Petal length vs. Petal width by species
+  - 📊 Histograms for all numeric features
+  - 📦 Box plots for outlier detection
+  - 🔁 Pair plot for complete feature relationships
 
-**Results and Insights:**
-- Petal length and width are strongly correlated, with clear species separation (setosa has smaller petals, virginica larger).
-- Sepal width has a few outliers; other features are tightly clustered.
-- Petal measurements are more effective than sepal measurements for distinguishing species.
+### 📌 Insights
+- Petal length and width are **strongly correlated**, showing **clear separation by species**.
+- Setosa has **smaller petals**, while virginica has **larger** ones.
+- **Petal measurements** are better for classification than sepal measurements.
 
-**File:** `Task1_Iris_Analysis.ipynb`
-
----
-
-## Task 3: Customer Churn Prediction
-
-**Objective:**  
-Predict which bank customers are likely to churn using the **Churn Modelling Dataset**.
-
-**Approach:**
-- Loaded and cleaned the dataset, dropping irrelevant columns (`RowNumber`, `CustomerId`, `Surname`).
-- Encoded categorical features (`Geography`, `Gender`) using One-Hot Encoding.
-- Performed EDA with:
-  - Bar plots (churn by Geography),
-  - Histograms (Age by churn),
-  - Correlation heatmap.
-- Trained a **Logistic Regression** model.
-- Evaluated the model with accuracy and a confusion matrix.
-- Analyzed feature importance using model coefficients.
-
-**Results and Insights:**
-- The model achieved an accuracy of ~*81.1*%.
-- Older customers and those with lower activity are more likely to churn.
-- Key features influencing churn include *`Age`,`Geogrpahy_germany` * ,.
-- The analysis helps banks target at-risk customers for retention.
-
-**File:** `Task3_Churn_Prediction.ipynb`
+📁 **File:** `Task1_Iris_Analysis.ipynb`
 
 ---
 
-## Task 5: Personal Loan Acceptance Prediction
+## 🔁 Task 3: Customer Churn Prediction
 
-**Objective:**  
-Predict which customers will accept a personal loan offer using the **Bank Marketing Dataset**.
+### 🎯 Objective  
+Predict which **bank customers are likely to churn** using the Churn Modelling Dataset.
 
-**Approach:**
-- Loaded and cleaned the dataset:
-  - Replaced “unknown” values with `NaN`,
-  - Dropped rows with missing values,
-  - Encoded categorical features (`job`, `marital`, etc.) using One-Hot Encoding.
-- Performed EDA with:
-  - Bar plots (`job`, `marital status`),
-  - Histogram (`age`).
-- Trained a **Logistic Regression** model.
-- Evaluated the model with accuracy and a confusion matrix.
-- Analyzed feature importance to identify customer groups likely to accept loans.
+### 🛠️ Approach
+- Cleaned dataset: Removed irrelevant columns (`RowNumber`, `CustomerId`, `Surname`)
+- Encoded categorical variables: `Geography`, `Gender`
+- Performed EDA:
+  - 📉 Churn distribution by `Geography`
+  - 📊 Age distribution by churn status
+  - 🧮 Correlation heatmap
+- Trained a **Logistic Regression** model
+- Evaluated with:
+  - ✅ Accuracy score
+  - 📉 Confusion matrix
+  - 📌 Feature importance
 
-**Results and Insights:**
-- The model achieved an accuracy of **92%**.
-- Administrative and management jobs, younger customers, and effective campaign calls increase loan acceptance.
-- Key features include `duration`, `poutcome_success`, and job type.
-- The analysis helps banks target customers like young professionals for loan campaigns.
+### 📌 Insights
+- Model accuracy: **~81.1%**
+- Customers who are **older** and from **Germany** (`Geography_Germany`) are more likely to churn.
+- Helps banks **target at-risk customers** for **retention strategies**.
 
-**File:** `Task5_Loan_Acceptance.ipynb`
+📁 **File:** `Task3_Churn_Prediction.ipynb`
+
+---
+
+## 💰 Task 5: Personal Loan Acceptance Prediction
+
+### 🎯 Objective  
+Predict which customers are likely to **accept a personal loan offer** using the Bank Marketing Dataset.
+
+### 🛠️ Approach
+- Cleaned data:
+  - Replaced `"unknown"` with `NaN`
+  - Dropped missing rows
+  - One-Hot Encoded categorical features (`job`, `marital`, etc.)
+- Performed EDA:
+  - 📊 Bar plots for `job`, `marital status`
+  - ⏳ Histogram for `age`
+- Trained a **Logistic Regression** model
+- Evaluated performance and analyzed key influencing factors
+
+### 📌 Insights
+- Model accuracy: **✅ 92%**
+- High likelihood of loan acceptance among:
+  - 👔 Customers with **administrative** and **management** jobs
+  - 🧑‍💼 Younger customers
+  - 📞 Successful campaign call outcomes
+- Helps banks design **targeted loan marketing campaigns**
+
+📁 **File:** `Task5_Loan_Acceptance.ipynb`
+
+---
+
+## 📂 Repository Structure
+
+```bash
+.
+├── Task1_Iris_Analysis.ipynb
+├── Task3_Churn_Prediction.ipynb
+└── Task5_Loan_Acceptance.ipynb
